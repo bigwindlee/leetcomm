@@ -1,5 +1,4 @@
 package leetcomm
-
 func IntSliceEqual(a, b []int) bool {
 	if len(a) != len(b) {
 		return false
@@ -27,4 +26,10 @@ func Int2DSliceEqual(a, b [][]int) bool {
 		}
 	}
 	return true
+}
+
+func DupSlice(a []int) []int {
+	ret := make([]int, len(a))
+	copy(ret, a)
+	return ret
 }
