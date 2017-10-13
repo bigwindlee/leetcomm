@@ -1,20 +1,20 @@
 package leetcomm
 
-func Max(args ...int) int {
-	max := args[0]
-	for i := 1; i < len(args); i++ {
-		if max < args[i] {
-			max = args[i]
+func Max(a int, args ...int) int {
+	max := a
+	for _, val := range args {
+		if max < val {
+			max = val
 		}
 	}
 	return max
 }
 
-func Min(args ...int) int {
-	min := args[0]
-	for i := 1; i < len(args); i++ {
-		if min > args[i] {
-			min = args[i]
+func Min(a int, args ...int) int {
+	min := a
+	for _, val := range args {
+		if min > val {
+			min = val
 		}
 	}
 	return min
